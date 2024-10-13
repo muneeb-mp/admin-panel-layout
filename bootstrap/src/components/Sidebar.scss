@@ -1,0 +1,39 @@
+aside {
+  min-width: 8.5rem;
+  max-width: 17rem;
+  box-shadow: 0rem 0.125rem 1.125rem 0rem #0000001a;
+  padding: 1.125rem 0rem;
+  transition: all 0.3s ease-in-out;
+
+  @media (max-width: 768px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: white;
+    transform: translateX(0);
+
+    &.hidden {
+      transform: translateX(-100%);
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
+
+    li {
+      list-style: none;
+      padding: 0.5rem 0.75rem;
+      background-color: #c7222a;
+
+      a {
+        color: #fff;
+        display: inline-block;
+        width: 100%;
+        text-decoration: none;
+      }
+    }
+  }
+}
