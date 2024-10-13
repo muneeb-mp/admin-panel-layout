@@ -1,0 +1,53 @@
+.cards {
+  display: grid;
+  gap: 1rem;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+
+  .card {
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    &.grid-span-col-2 {
+      background-color: var(--gray);
+      color: var(--white);
+    }
+
+    &:last-child {
+      background-color: limegreen;
+      color: var(--white);
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+
+    .card {
+      &.grid-span-col-2 {
+        grid-column: span 2;
+      }
+      &:last-child {
+        grid-column-start: 3;
+        grid-row-start: 1;
+        grid-row-end: span 2;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+
+    .card {
+      &:last-child {
+        grid-column-start: 4;
+        grid-row-start: 1;
+        grid-row-end: span 2;
+      }
+    }
+  }
+}

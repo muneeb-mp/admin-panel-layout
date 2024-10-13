@@ -5,6 +5,12 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+:root {
+  --white: #fff;
+  --black: #000;
+  --gray: #717171fb;
+}
+
 .layout {
   display: flex;
   flex-direction: column;
