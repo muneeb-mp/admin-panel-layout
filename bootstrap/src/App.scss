@@ -5,18 +5,18 @@
   transition: all 0.3s ease-in-out;
 
   .card {
-    background-color: var(--white);
+    background-color: var(--content-bg);
     padding: 1rem;
     border-radius: 0.5rem;
 
     &.grid-span-col-2 {
-      background-color: var(--gray);
-      color: var(--white);
+      background-color: var(--primary-color);
+      color: var(--text-color-inverse);
     }
 
     &:last-child {
       background-color: limegreen;
-      color: var(--white);
+      color: var(--content-bg);
     }
   }
 }

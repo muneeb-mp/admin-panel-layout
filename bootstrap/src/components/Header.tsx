@@ -1,14 +1,11 @@
 import { BsJustify } from "react-icons/bs";
 import "./Header.scss";
 import { useIsBelowWidth } from "../hooks/useIsMobile";
-import { useEffect } from "react";
+import { useTheme } from "../contexts/useTheme";
 
 const Header = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
   const { isBelowWidth } = useIsBelowWidth();
-
-  useEffect(() => {
-    console.log(isBelowWidth);
-  }, [isBelowWidth]);
+  const { setTheme } = useTheme();
 
   return (
     <header className="header">
@@ -16,7 +13,11 @@ const Header = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
         {isBelowWidth && <BsJustify onClick={toggleSidebar} />}
         <span className="logo">Logo</span>
       </div>
-      <span className="profile">Profile</span>
+      <span className="profile">
+        <button onClick={() => setTheme("dark")}>Dark</button>
+        <button onClick={() => setTheme("light")}>Light</button>
+        <button onClick={() => setTheme("amoled")}>Amoled</button>
+      </span>
     </header>
   );
 };
