@@ -1,10 +1,10 @@
-import { useIsBelowWidth } from "../hooks/useIsMobile";
+import { useIsBelowWidth } from "../hooks/useIsBelowWidth";
 import "./Sidebar.scss";
 
 const sidebarData = [
   {
     id: 1,
-    name: "Link 1 is very large and more. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat pariatur adipisci deserunt consectetur inventore beatae perspiciatis, modi quas corrupti architecto illo praesentium vitae aut quo optio quis. Consectetur, delectus molestiae?",
+    name: "Link 1",
     link: "link1",
   },
   { id: 2, name: "Link 2", link: "link2" },

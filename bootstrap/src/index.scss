@@ -5,6 +5,7 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+// Refactor variable names before adding themes
 html[data-my-theme="light"] {
   --background: #d4d4d4fb;
   --text-color: #000;
@@ -13,21 +14,21 @@ html[data-my-theme="light"] {
   --primary-color: #717171fb;
 }
 
-html[data-my-theme="dark"] {
-  --background: #535353;
-  --text-color: #ffffff;
-  --text-color-inverse: #fff;
-  --content-bg: #2b2b2b;
-  --primary-color: #333333;
-}
+// html[data-my-theme="dark"] {
+//   --background: #535353;
+//   --text-color: #ffffff;
+//   --text-color-inverse: #fff;
+//   --content-bg: #2b2b2b;
+//   --primary-color: #333333;
+// }
 
-html[data-my-theme="amoled"] {
-  --background: #000000;
-  --text-color: #ffffff;
-  --text-color-inverse: #fff;
-  --content-bg: #373737;
-  --primary-color: #444444;
-}
+// html[data-my-theme="amoled"] {
+//   --background: #000000;
+//   --text-color: #ffffff;
+//   --text-color-inverse: #fff;
+//   --content-bg: #373737;
+//   --primary-color: #444444;
+// }
 
 .layout {
   display: flex;

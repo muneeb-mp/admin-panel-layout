@@ -1,7 +1,7 @@
 import React from "react";
 import { debounce } from "../utils/common";
 
-export const useIsBelowWidth = (width: number = 768, delay: number = 100) => {
+export const useIsBelowWidth = (width: number = 768, delay: number = 200) => {
   const [isBelowWidth, setIsBelowWidth] = React.useState(
     window.innerWidth < width
   );
